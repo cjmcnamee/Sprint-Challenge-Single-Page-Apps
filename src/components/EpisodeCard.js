@@ -10,20 +10,19 @@ export const CardDiv = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-
 export const PadDiv = styled.div`
   padding: 20px;
 `;
 
-export default function LocationCard ({ name, type, dimension, residents }) {
-  // image={image}
+export default function EpisodeCard ({name, airDate, episode, characters}) {
+
   return (
     <CardDiv>
       <PadDiv>
         <h1>{name}</h1>
-        <p className="grayBoy">{type} - {dimension}</p>
+        <div className="grayBoy">{airDate} - {episode}</div>
+        <div>Number of Characters: {characters.length}</div>
       </PadDiv>
-        <button width='100%'>Residents: {residents.length}</button>
     </CardDiv>
   );
 }

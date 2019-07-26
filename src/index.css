@@ -38,3 +38,14 @@ header h1 {
   text-align: center;
 
 }
+
+.flexH2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.grayBoy {
+  color: gray;
+  margin-bottom: 10px;
+}
