@@ -18,7 +18,7 @@ export default function LocationsList() {
   }, [])
 
   return <section className='location-list grid-view'>
-    <h2>
+    <h2 className='flexH2'>
       {locations.map(item => (
         <LocationCard key={item.id} name={item.name} type={item.type} dimension={item.dimension} residents={item.residents}/>
       ))}

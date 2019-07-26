@@ -18,7 +18,7 @@ export default function EpisodesList() {
   }, [])
 
   return <section className='episode-list grid-view'>
-    <h2>
+    <h2 className='flexH2'>
       {episodes.map(item => (
         <EpisodeCard key={item.id} name={item.name} airDate={item.air_date} episode={item.episode} characters={item.characters}/>
       ))}

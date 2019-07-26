@@ -22,7 +22,7 @@ export default function CharacterList() {
 
   return <section className='character-list grid-view'>
 
-      <h2>
+      <h2 className='flexH2'>
       {characters.map(item => (
           <CharacterCard key={item.id} image={item.image} name={item.name} species={item.species} status={item.status} origin={item.origin.name} location={item.location.name} episode={item.episode}/>
       ))}
